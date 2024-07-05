@@ -1,4 +1,4 @@
-/*DROP DATABASE;*/
+/*DROP DATABASE prova_banco;*/
 
 create database prova_banco;
  
@@ -50,5 +50,7 @@ insert into professor (nome, disciplina) values ("Leandra", "Língua Inglesa");
 insert into professor (nome, disciplina) values ("Whesley", "Língua Portuguesa");
 insert into professor (nome, disciplina) values ("Fernanda", "Sociologia");
 insert into professor (nome, disciplina) values ("Karoline", "Educação Financeira");
+
+update professor set disciplina= "Língua Portuguesa" where pk=8;
 
 select * from professor;
