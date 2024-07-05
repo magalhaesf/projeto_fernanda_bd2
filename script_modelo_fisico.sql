@@ -1,4 +1,4 @@
-/*DROP DATABASE prova_banco;*/
+/*DROP DATABASE;*/
 
 create database prova_banco;
  
@@ -40,25 +40,15 @@ create table disciplina(
 	turma_fk int, foreign key(turma_fk) references turma(pk)
 );
 
-select * from professor;
-
-insert into professor (nome, disciplina) values ("Jhonatan", "geografia");
-insert into professor (nome, disciplina) values ("Tiago", "química");
-insert into professor (nome, disciplina) values ("Norberto", "banco de dados");
-insert into professor (nome, disciplina) values ("Gisele", "matemática");
-insert into professor (nome, disciplina) values ("Sebastião", "biologia");
-insert into professor (nome, disciplina) values ("Alexandre", "história");
-insert into professor (nome, disciplina) values ("Leandra", "língua inglesa");
-insert into professor (nome, disciplina) values ("Whesley", "língua portuguesa");
-insert into professor (nome, disciplina) values ("Fernanda", "sociologia");
-insert into professor (nome, disciplina) values ("Karoline,", "educação financeira");
-
-update professor set nome= "Karoline" where pk=10;
-update professor set disciplina= "Língua Portuguesa" where pk=1;
-update professor set disciplina= "Língua Portuguesa" where pk=2;
-update professor set disciplina= "Língua Portuguesa" where pk=3;
-update professor set disciplina= "Língua Portuguesa" where pk=4;
-update professor set disciplina= "Língua Portuguesa" where pk=5;
-update professor set disciplina= "Língua Portuguesa" where pk=6;
+insert into professor (nome, disciplina) values ("Jhonatan", "Geografia");
+insert into professor (nome, disciplina) values ("Tiago", "Química");
+insert into professor (nome, disciplina) values ("Norberto", "Banco de Dados");
+insert into professor (nome, disciplina) values ("Gisele", "Matemática");
+insert into professor (nome, disciplina) values ("Sebastião", "Biologia");
+insert into professor (nome, disciplina) values ("Alexandre", "História");
+insert into professor (nome, disciplina) values ("Leandra", "Língua Inglesa");
+insert into professor (nome, disciplina) values ("Whesley", "Língua Portuguesa");
+insert into professor (nome, disciplina) values ("Fernanda", "Sociologia");
+insert into professor (nome, disciplina) values ("Karoline", "Educação Financeira");
 
 select * from professor;
